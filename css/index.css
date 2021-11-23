@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fafafa;
+}
+li {
+    list-style: none; 
+}
+.clearfix:after {
+     content: "";
+     display: block;
+     height: 0;
+     clear: both;
+     visibility: hidden;
+ }
+.clearfix {
+     *zoom: 1;
+ }
+
+/* 顶部导航栏 */
+header {
+    height: 100px;
+    background-color: #ffffff;
+}
+.inner {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    line-height: 100px;  /*行高会继承*/
+}
+.logo {
+    float: left;
+}
+.logo a {
+    display: block;
+    line-height: 0;
+}
+nav {
+    float: right;
+}
+nav ul{
+    overflow: hidden;
+}
+nav li {
+    float: left;
+    margin: 0 30px;
+}
+nav li a {
+    color: #333;
+    text-decoration: none;
+}
+nav li a:hover {
+    color: #2288f6;
+}
+
+/* banner start */
+.banner {
+    height: 620px;
+    background: url(../images/banner.jpg) no-repeat top center;
+}
+
+/* service module */
+.service {
+    width: 1055px;
+    margin: 75px auto 60px;
+}
+.service-hd {
+    border-top:  1px solid #ccc;
+    margin: 0 25px 44px;
+}
+.service-hd h3 {
+    width: 165px;
+    height: 47px;
+    margin: -15px auto 17px;
+}
+.service-hd p {
+    font-size: 14px;
+    color: #666;
+    line-height: 26px;
+    text-align: center;
+    width: 844px;
+    margin: 0 auto;
+}
+.service-md {
+    overflow: hidden;
+}
+.service-md img {
+    margin-bottom: 40px;
+    width: 253px;
+    height: 130px;
+}
+.service-md h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    height: 50px;
+    color: #333;
+}
+.service-md p {
+    font-size: 13px;
+    color: #666;
+}
+.service-md .button {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+}
+.service-md a {
+    display:inline-block; 
+    width: 148px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ff9412;
+    border-radius: 4px;
+    text-align: center;
+    color: #ff9412;
+    text-decoration: none;
+}
+.service-md a:hover {
+    color: #fff;
+    background-color: #ff9412;
+}
+.service-md1,
+.service-md2,
+.service-md3 {
+    border: 1px solid #e7e8e9;
+    width: 318px;
+    height: 510px;
+    box-sizing: border-box;
+    position: relative;
+}
+.service-md1 {
+    float: left;
+    padding: 42px 36px 50px;
+    background-color: #fff;
+}
+.service-md2 {
+    margin: 0 auto;
+    padding: 33px 41px 50px;
+    background-color: #fff;
+}
+.service-md3 {
+    float: right;
+    padding: 42px 33px 50px;
+    background-color: #fff;
+}
+
+/* 经典案例 */
+.case-warp {
+        background-color: #fff;
+}
+.case{
+    width: 1055px;
+    margin: 105px auto;
+    padding-top: 75px;
+    padding-bottom: 60px;
+}
+.case-bd {
+    position: relative;
+}
+.case-bd ul {
+    overflow: hidden;
+}
+.case-bd li {
+    height: 210px;
+    width: 325px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+.case-bd-m {
+    margin: 0 40px;
+}
+.text {
+    height: 46px;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: 46px;
+    background-color: rgba(0, 0, 0, .3)
+}
+.mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5) url(../images/fdj.png) no-repeat center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.case-bd li:hover .mask {
+    display: block;
+}
+.case-bd .left,
+.case-bd .right {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    background-color: rgba(0, 0, 0, .2);
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 38px;
+    border-radius: 50%;
+}
+.case-bd .left {
+    left: -90px;
+}
+.case-bd .right {
+    right: -90px;
+}
+.case-bd a:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* 合作媒体 */
+.media {
+    width: 1105px;
+    margin: 75px auto 200px;
+
+}
+.media .service-hd{
+    width: 1055px;
+    margin-bottom: 50px;
+}
+.media-bd{
+    width: 1103px;
+    height: 286px;
+    overflow: hidden;
+}
+.media-bd ul{
+    width: 1115px;
+}
+.media-bd li {
+    width: 220px;
+    height: 80px;
+    float: left;
+    border-right:1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    text-align: center;
+    line-height: 80px;
+    padding-top: 18px
+}
+.media-bd li a {
+    display: block;
+}
+
+/* footer */
+footer {
+    height: 165px;
+    background-color: #212425;
+    color: #fff;
+}
+.subnav {
+    text-align: center;
+    padding-top: 50px;
+}
+.subnav a {
+    color: #f0f1f1;
+    text-decoration: none;
+    padding: 0 5px;
+    font-size: 14px;
+}
+.subnav a:hover {
+    color: #2288f6;
+    text-decoration: underline;
+}
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 10px
+}
